@@ -1,0 +1,92 @@
+body {
+    color: yellow;
+    font-size: 20px;
+}
+header {
+    text-align: left;
+    padding: 20px;
+    background: #5C9ED9;
+    border: 2px solid black;
+}
+header img {
+    width: 140px;
+}
+.logo {
+    display: flex;
+    gap: 15px;
+}
+nav {
+    background-color: #CDDF8D;
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    padding: 8px 18px;
+    border-right: 1px solid black;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #FCCB00;
+}
+.active {
+    background:black;
+}
+
+.active a {
+    color: white;
+}
+.banner img {
+    width: 99.5%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border: 2px solid black;
+}
+main {
+    padding: 20px;
+    background: #1769B6;
+    border: 2px solid black;
+}
+hr {
+    border: none;
+    height: 3px;
+    background: #FCCB00;
+}
+.layout {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+text {
+    flex: 1;
+}
+.infobox {
+    width: 1580px;
+    background: #FCCB00;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.t1 {
+    font-weight: bolt;
+    width: 40%;
+}
+.t2 {
+    width: 60%;
+}
