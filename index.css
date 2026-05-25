@@ -16,6 +16,7 @@ header img {
     gap: 15px;
 }
 nav {
+    display: flex;
     background-color: #CDDF8D;
     border: 2px solid black;
     border-bottom: 2px solid black;
@@ -27,13 +28,15 @@ nav ul {
     padding: 0;
 }
 nav li {
-    padding: 8px 18px;
-    border-right: 1px solid black;
+    padding: 8px;
 }
 nav a {
+    padding: 0px 18px;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
 }
 nav a:hover {
     background-color: #FCCB00;
@@ -107,11 +110,81 @@ text {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
 }
 .fullscreen img {
     max-width: 90%;
     max-height: 90%;
+}
+.characters {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.characters img {
+    width: 420px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid black;
+    background: #5C9ED9;
+}
+.characters img:hover {
+    transform: scale(1.05);
+}
+.character-layout {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.character-img img {
+    width: 250px;
+    height: 400px;
+    object-fit: contain;
+    border: 2px solid black;
+}
+.character-content {
+    flex: 1;
+}
+.tabs {
+    display: flex;
+}
+.tabs button {
+    padding: 15px 40px;
+    border: 2px solid black;
+    background: #FCCB00;
+    cursor: pointer;
+}
+.tabs button:hover {
+    background: #CDDF8D;
+}
+.tab-content {
+    border: 2px solid black;
+    padding: 10px;
+    display: none;
+}
+.audio-list {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.actor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.actor img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover
+}
+.meme-gallery {
+    width: 550px;
+    margin: 10px;
+    cursor: pointer;
+
 }

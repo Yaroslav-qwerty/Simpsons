@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>The Simpsons</title>
+</head>
+<body>
+  <div>
+    <header class="logo">
+        <img src="The_Simpsons_yellow_logo.svg" alt="Logo">
+        <h1 style="color: yellow;">The Simpsons Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Etu sivu</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="forum.html">Forum</a></li>
+        </ul> 
+    </nav>
+    <main>
+        <div class="character-layout">
+
+            <div class="character-img">
+                <img src="HomerSimpson.webp">
+            </div>
+            <div class="character-content">
+                <div class="tabs">
+                    <button onclick="showtab('info')">
+                        Information
+                    </button>
+                    <button onclick="showtab('memes')">
+                        Memes
+                    </button>
+                </div>
+            </div>            
+            <div id="info" class="tab-content">
+                <h1>Homer Simpson</h1>
+                <p>
+                    infobox
+                </p>
+                <div class="audio-list">
+                    <audio controls>
+                        <source src="1990.wav">
+                    </audio>
+                    <audio controls>
+                        <source src="aaaahh.wav">
+                    </audio>
+                    <audio controls>
+                        <source src="alcohol1_x.wav">
+                    </audio>
+                </div>
+                <div class="actor">
+                    <img src="DanCastellaneta.jpeg">
+                    <div>
+                        <h1>Dan Castellaneta</h1>
+                        <a href="https://www.imdb.com/name/nm0144657/?ref_=ttfc_fcr_3_1" style="color: yellow;">IMDB</a>
+                    </div>
+                </div>
+            </div> 
+            <div id="memes" class="tab-content">
+                <div class="meme-gallery">
+                    <img src="memehomer.gif" onclick="openMeme(this)">
+                    <img src="memehomer2.gif" onclick="openMeme(this)">
+                    <img src="memehomer3.gif" onclick="openMeme(this)">
+                    <img src="memehomer4.gif" onclick="openMeme(this)">
+                    <img src="memehomer5.gif" onclick="openMeme(this)">
+                    <img src="memehomer6.gif" onclick="openMeme(this)">
+                </div>
+                <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+                    <img id="fullscreenImg">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+        <img id="fullscreenImg">
+    </div>      
+  </div>
+    <script src="character.js"></script>
+</body>
+</html>

@@ -1,2 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Forum</title>
 
+  <style>
+    body {
+      font-family: Arial bold, sans-serif;
+      margin: 30px;
+      color: #FCCB00;
+    }
 
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 18px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .message {
+      background: #5C9ED9;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .message h3 {
+      margin: 10px 0;
+    }
+
+    .message small {
+      color: yellow;
+    }
+
+    dialog {
+      padding: 25px;
+      border: none;
+      border-radius: 8px;
+      width: 400px;
+    }
+
+    dialog::backdrop {
+      background: rgba(0,0,0,0.5);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input,
+    textarea {
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <header class="logo">
+        <img src="The_Simpsons_yellow_logo.svg" alt="Logo">
+        <h1 style="color: yellow;">The Simpsons Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Etu sivu</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="forum.html">Forum</a></li>
+        </ul> 
+    </nav>
+    <main>
+
+    <button id="openDialogBtn">Luo viesti</button>
+
+    <div id="messageList"></div>
+
+    <dialog id="messageDialog">
+        <form id="messageForm">
+        <input
+            type="text"
+            id="sender"
+            placeholder="Lähettäjän nimi"
+            required
+        />
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Otsikko"
+            required
+        />
+
+        <textarea
+            id="content"
+            rows="5"
+            placeholder="Viesti"
+            required
+        ></textarea>
+
+        <div class="buttons">
+            <button type="button" id="cancelBtn">Peruuta</button>
+            <button type="submit">Lähetä</button>
+        </div>
+        </form>
+    </dialog>
+    </main>
+  </div>
+    <script src="forum.js"></script>
+</body>
+</html>

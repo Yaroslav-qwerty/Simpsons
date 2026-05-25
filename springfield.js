@@ -1,9 +1,10 @@
-console.log("The Springfield-sivu avattu")
+console.log("Springfield-sivu avattu")
 
 function openSet(num) {
     document.getElementById("ikuva").style.display = "none";
 
-    document.querySelectorAll(".set").forEach(set => {
+    document.querySelectorAll(".set")
+    .forEach(set => {
         set.style.display = "none";
     });
 
@@ -13,7 +14,8 @@ function openSet(num) {
 function back() {
     document.getElementById("ikuva").style.display = "block";
 
-    document.querySelectorAll(".set").forEach(set => {
+    document.querySelectorAll(".set")
+    .forEach(set => {
         set.style.display = "none";
     });
 }
