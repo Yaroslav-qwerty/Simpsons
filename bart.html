@@ -21,9 +21,60 @@
         </ul> 
     </nav>
     <main>
-        
+        <div class="character-layout">
+
+            <div class="character-img">
+                <img src="BartSimpson.png">
+            </div>
+            <div class="character-content">
+                <div class="tabs">
+                    <button onclick="showtab('info')">Information</button>
+                    <button onclick="showtab('memes')">Memes</button>
+                </div>           
+                <div id="info" class="tab-content">
+                    <h1>Bartholomew Jo-Jo Simpson</h1>
+                    <p>
+                        Bart edustaa psykologista tyyppiä, jossa ei oivalla kykyjään (englanniksi underachiever). Tottelemattomuus ja sääntöjen piittaamattomuus ovat hänen tyypillisiä käyttäytymismallejaan. Hänen kepposensa ja huliganismejaan on usein monimutkaista ja harkittua, ja hänen tekonsa ja puheensa kuvaavat häntä usein terävä- ja joustavamieliseksi poikaksi.
+                    </p>
+                    <div class="audio-list">
+                        <audio controls>
+                            <source src="ay_caramba.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="big_deal.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="bartman.wav">
+                        </audio>
+                    </div>
+                    <div class="actor">
+                        <img src="NancyCartwright.png">
+                        <div>
+                            <h1>Nancy Cartwright</h1>
+                            <a href="https://www.imdb.com/name/nm0004813/?ref_=ttfc_fcr_3_3" style="color: yellow;">IMDB</a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="memes" class="tab-content">
+                    <div class="meme-gallery">
+                        <img src="memebart.gif" onclick="openMeme(this)">
+                        <img src="memebart2.gif" onclick="openMeme(this)">
+                        <img src="memebart3.gif" onclick="openMeme(this)">
+                        <img src="memebart4.gif" onclick="openMeme(this)">
+                        <img src="memebart5.gif" onclick="openMeme(this)">
+                        <img src="memebart6.gif" onclick="openMeme(this)">
+                    </div>
+                    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+                        <img id="fullscreenImg">
+                    </div>
+                </div>
+            </div> 
+        </div>
     </main>
+    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+        <img id="fullscreenImg">
+    </div>
   </div>
-    <script src=""></script>
+    <script src="character.js"></script>
 </body>
 </html>

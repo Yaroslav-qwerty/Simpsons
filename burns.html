@@ -21,9 +21,60 @@
         </ul> 
     </nav>
     <main>
-        
+        <div class="character-layout">
+
+            <div class="character-img">
+                <img src="CharlesMontgomeryBurns.webp">
+            </div>
+            <div class="character-content">
+                <div class="tabs">
+                    <button onclick="showtab('info')">Information</button>
+                    <button onclick="showtab('memes')">Memes</button>
+                </div>           
+                <div id="info" class="tab-content">
+                    <h1>Charles Montgomery Plantagenet Schicklgruber Burns</h1>
+                    <p>
+                        Burns on uskomattoman varakas, ja Springfieldin plutokraatin asemansa ansiosta hän voi tehdä mitä haluaa ilman seurauksia. Hänen avustajansa, Waylon Smithers, kosiskelee häntä lähes aina. Burnsin vanhempien nimet ovat Daphne ja Clifford. Montgomery Burnsin etu- ja sukunimet ovat skotlantilaisia, viitaten skotlantilaisen saituuden stereotypiaan.
+                    </p>
+                    <div class="audio-list">
+                        <audio controls>
+                            <source src="help_you.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="halloween.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="get-together.wav">
+                        </audio>
+                    </div>
+                    <div class="actor">
+                        <img src="HarryShearer.png">
+                        <div>
+                            <h1>Harry Shearer</h1>
+                            <a href="https://www.imdb.com/name/nm0733427/?ref_=ttfc_fcr_3_4" style="color: yellow;">IMDB</a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="memes" class="tab-content">
+                    <div class="meme-gallery">
+                        <img src="memeburns.gif" onclick="openMeme(this)">
+                        <img src="memeburns2.gif" onclick="openMeme(this)">
+                        <img src="memeburns3.gif" onclick="openMeme(this)">
+                        <img src="memeburns4.gif" onclick="openMeme(this)">
+                        <img src="memeburns5.gif" onclick="openMeme(this)">
+                        <img src="memeburns6.gif" onclick="openMeme(this)">
+                    </div>
+                    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+                        <img id="fullscreenImg">
+                    </div>
+                </div>
+            </div> 
+        </div>
     </main>
+    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+        <img id="fullscreenImg">
+    </div>
   </div>
-    <script src=""></script>
+    <script src="character.js"></script>
 </body>
 </html>

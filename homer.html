@@ -28,51 +28,47 @@
             </div>
             <div class="character-content">
                 <div class="tabs">
-                    <button onclick="showtab('info')">
-                        Information
-                    </button>
-                    <button onclick="showtab('memes')">
-                        Memes
-                    </button>
-                </div>
-            </div>            
-            <div id="info" class="tab-content">
-                <h1>Homer Simpson</h1>
-                <p>
-                    infobox
-                </p>
-                <div class="audio-list">
-                    <audio controls>
-                        <source src="1990.wav">
-                    </audio>
-                    <audio controls>
-                        <source src="aaaahh.wav">
-                    </audio>
-                    <audio controls>
-                        <source src="alcohol1_x.wav">
-                    </audio>
-                </div>
-                <div class="actor">
-                    <img src="DanCastellaneta.jpeg">
-                    <div>
-                        <h1>Dan Castellaneta</h1>
-                        <a href="https://www.imdb.com/name/nm0144657/?ref_=ttfc_fcr_3_1" style="color: yellow;">IMDB</a>
+                    <button onclick="showtab('info')">Information</button>
+                    <button onclick="showtab('memes')">Memes</button>
+                </div>           
+                <div id="info" class="tab-content">
+                    <h1>Homer Jay Simpson</h1>
+                    <p>
+                        Homerilla ja hänen vaimollaan Margella on kolme lasta: Bart, Lisa ja Maggie. Perheen elättäjänä Homer työskentelee Springfieldin ydinvoimalassa. Homer ilmentää useita työväenluokkaisia ​​amerikkalaisia ​​stereotypioita: hän on hoitamaton, epäpätevä, kömpelö, laiska, paljon juova, tietämätön ja ylipainoinen. Pohjimmiltaan hän on kuitenkin myös kunnollinen mies, joka on kiihkeästi omistautunut perheelleen.
+                    </p>
+                    <div class="audio-list">
+                        <audio controls>
+                            <source src="1990.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="aaaahh.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="alcohol1_x.wav">
+                        </audio>
+                    </div>
+                    <div class="actor">
+                        <img src="DanCastellaneta.jpeg">
+                        <div>
+                            <h1>Dan Castellaneta</h1>
+                            <a href="https://www.imdb.com/name/nm0144657/?ref_=ttfc_fcr_3_1" style="color: yellow;">IMDB</a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="memes" class="tab-content">
+                    <div class="meme-gallery">
+                        <img src="memehomer.gif" onclick="openMeme(this)">
+                        <img src="memehomer2.gif" onclick="openMeme(this)">
+                        <img src="memehomer3.gif" onclick="openMeme(this)">
+                        <img src="memehomer4.gif" onclick="openMeme(this)">
+                        <img src="memehomer5.gif" onclick="openMeme(this)">
+                        <img src="memehomer6.gif" onclick="openMeme(this)">
+                    </div>
+                    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+                        <img id="fullscreenImg">
                     </div>
                 </div>
             </div> 
-            <div id="memes" class="tab-content">
-                <div class="meme-gallery">
-                    <img src="memehomer.gif" onclick="openMeme(this)">
-                    <img src="memehomer2.gif" onclick="openMeme(this)">
-                    <img src="memehomer3.gif" onclick="openMeme(this)">
-                    <img src="memehomer4.gif" onclick="openMeme(this)">
-                    <img src="memehomer5.gif" onclick="openMeme(this)">
-                    <img src="memehomer6.gif" onclick="openMeme(this)">
-                </div>
-                <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
-                    <img id="fullscreenImg">
-                </div>
-            </div>
         </div>
     </main>
     <div class="fullscreen" id="fullscreen" onclick="closeMeme()">

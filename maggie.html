@@ -21,9 +21,52 @@
         </ul> 
     </nav>
     <main>
-        
+        <div class="character-layout">
+
+            <div class="character-img">
+                <img src="MaggieSimpson.png">
+            </div>
+            <div class="character-content">
+                <div class="tabs">
+                    <button onclick="showtab('info')">Information</button>
+                    <button onclick="showtab('memes')">Memes</button>
+                </div>           
+                <div id="info" class="tab-content">
+                    <h1>Margaret Lenny Simpson</h1>
+                    <p>
+                        Maggie on Homerin ja Margen nuorin lapsi ja Bartin ja Lisan pikkusisko. Hänet nähdään usein imeskelemässä punaista tuttiaan, ja kävellessään hän kompastuu vaatteisiinsa ja kaatuu kasvoilleen. Vauvana hän ei ole vielä oppinut puhumaan.
+                    </p>
+                    <p style="background-color: white; color: black;">
+                        Ääntä ei kuulu, koska hahmo ei puhu.
+                    </p>
+                    <div class="actor">
+                        <img src="NancyCartwright.png">
+                        <div>
+                            <h1>Nancy Cartwright</h1>
+                            <a href="https://www.imdb.com/name/nm0004813/?ref_=ttfc_fcr_3_3" style="color: yellow;">IMDB</a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="memes" class="tab-content">
+                    <div class="meme-gallery">
+                        <img src="mememaggie.gif" onclick="openMeme(this)">
+                        <img src="mememaggie2.gif" onclick="openMeme(this)">
+                        <img src="mememaggie3.gif" onclick="openMeme(this)">
+                        <img src="mememaggie4.gif" onclick="openMeme(this)">
+                        <img src="mememaggie5.gif" onclick="openMeme(this)">
+                        <img src="mememaggie6.gif" onclick="openMeme(this)">
+                    </div>
+                    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+                        <img id="fullscreenImg">
+                    </div>
+                </div>
+            </div> 
+        </div>
     </main>
+    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+        <img id="fullscreenImg">
+    </div>
   </div>
-    <script src=""></script>
+    <script src="character.js"></script>
 </body>
 </html>

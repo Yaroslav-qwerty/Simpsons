@@ -148,7 +148,8 @@ text {
     border: 2px solid black;
 }
 .character-content {
-    flex: 1;
+    display: inline-block;
+    
 }
 .tabs {
     display: flex;
@@ -169,8 +170,11 @@ text {
 }
 .audio-list {
     display: flex;
-    gap: 20px;
-    margin: 20px 0;
+    gap: 10px;
+    margin-top: 20px;
+}
+.audio-list audio {
+    width: 260px;
 }
 .actor {
     display: flex;
@@ -180,11 +184,17 @@ text {
 .actor img {
     width: 150px;
     height: 150px;
-    object-fit: cover
+    object-fit: cover;
+    margin-top: 20px;
 }
 .meme-gallery {
-    width: 550px;
-    margin: 10px;
-    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
 
+.meme-gallery img {
+    width: 250px;
+    cursor: pointer;
+    border: 2px solid black;
 }

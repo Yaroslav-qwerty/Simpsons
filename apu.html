@@ -21,9 +21,60 @@
         </ul> 
     </nav>
     <main>
-        
+        <div class="character-layout">
+
+            <div class="character-img">
+                <img src="ApuNahasapeemapetilon.png">
+            </div>
+            <div class="character-content">
+                <div class="tabs">
+                    <button onclick="showtab('info')">Information</button>
+                    <button onclick="showtab('memes')">Memes</button>
+                </div>           
+                <div id="info" class="tab-content">
+                    <h1>Apu Nahasapeemapetilon</h1>
+                    <p>
+                        Apun tunnusomaisiin piirteisiin kuuluvat hänen selkeä intialainen aksenttinsa, ainutlaatuinen lähestymistapansa työhön ja hänen tunnuslauseensa "Kiitos, tule uudelleen", jonka hän lausuu jopa silloin, kun joku varastaa hänen kaupastaan tai kohtelee häntä huonosti: "Siinä kaikki! Mene pois täältä... Ja tule uudelleen!" Hän käyttää yleensä vihreää villapaitaa, mustaa poolopaitaa, beigejä housuja ja mustia kenkiä. Apu on melko ylipainoinen ja hänet on nähty myös painonpudotusleirillä.
+                    </p>
+                    <div class="audio-list">
+                        <audio controls>
+                            <source src="alarmed.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="bastard.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="hell.wav">
+                        </audio>
+                    </div>
+                    <div class="actor">
+                        <img src="HankAzaria.png">
+                        <div>
+                            <h1>Hank Azaria</h1>
+                            <a href="https://www.imdb.com/name/nm0000279/?ref_=ttfc_fcr_3_6" style="color: yellow;">IMDB</a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="memes" class="tab-content">
+                    <div class="meme-gallery">
+                        <img src="memeapu.gif" onclick="openMeme(this)">
+                        <img src="memeapu2.gif" onclick="openMeme(this)">
+                        <img src="memeapu3.gif" onclick="openMeme(this)">
+                        <img src="memeapu4.gif" onclick="openMeme(this)">
+                        <img src="memeapu5.gif" onclick="openMeme(this)">
+                        <img src="memeapu6.gif" onclick="openMeme(this)">
+                    </div>
+                    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+                        <img id="fullscreenImg">
+                    </div>
+                </div>
+            </div> 
+        </div>
     </main>
+    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+        <img id="fullscreenImg">
+    </div>
   </div>
-    <script src=""></script>
+    <script src="character.js"></script>
 </body>
 </html>

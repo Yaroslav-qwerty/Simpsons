@@ -21,9 +21,60 @@
         </ul> 
     </nav>
     <main>
-        
+        <div class="character-layout">
+
+            <div class="character-img">
+                <img src="MoeSzyslak.png">
+            </div>
+            <div class="character-content">
+                <div class="tabs">
+                    <button onclick="showtab('info')">Information</button>
+                    <button onclick="showtab('memes')">Memes</button>
+                </div>           
+                <div id="info" class="tab-content">
+                    <h1>Moemar Morris Szyslak</h1>
+                    <p>
+                        Moe omistaa ja on baarimikko Moe'sissa, Springfieldin baarissa ja Barney Gumblen, Homer Simpsonin, Carl Carlsonin ja Lenny Leonardin suosikkipaikassa. Moella ei ole omaa asuntoa, ja hän asuu kolmannen luokan Regent Hotelissa. Hän on kuitenkin niin varakas, että hänellä on varaa plasmatelevisioon silloin tällöin. Moe on syvästi onneton henkilökohtaisessa elämässään ja kamppailee yksinäisyyden ja fyysisen epäviehättävyyden kanssa.
+                    </p>
+                    <div class="audio-list">
+                        <audio controls>
+                            <source src="children_x.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="multi_mystery1.wav">
+                        </audio>
+                        <audio controls>
+                            <source src="my_eye.wav">
+                        </audio>
+                    </div>
+                    <div class="actor">
+                        <img src="HankAzaria.png">
+                        <div>
+                            <h1>Hank Azaria</h1>
+                            <a href="https://www.imdb.com/name/nm0000279/?ref_=ttfc_fcr_3_6" style="color: yellow;">IMDB</a>
+                        </div>
+                    </div>
+                </div> 
+                <div id="memes" class="tab-content">
+                    <div class="meme-gallery">
+                        <img src="mememoe.gif" onclick="openMeme(this)">
+                        <img src="mememoe2.gif" onclick="openMeme(this)">
+                        <img src="mememoe3.gif" onclick="openMeme(this)">
+                        <img src="mememoe4.gif" onclick="openMeme(this)">
+                        <img src="mememoe5.gif" onclick="openMeme(this)">
+                        <img src="mememoe6.gif" onclick="openMeme(this)">
+                    </div>
+                    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+                        <img id="fullscreenImg">
+                    </div>
+                </div>
+            </div> 
+        </div>
     </main>
+    <div class="fullscreen" id="fullscreen" onclick="closeMeme()">
+        <img id="fullscreenImg">
+    </div>
   </div>
-    <script src=""></script>
+    <script src="character.js"></script>
 </body>
 </html>

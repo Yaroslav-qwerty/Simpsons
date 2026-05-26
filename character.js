@@ -1,9 +1,10 @@
 console.log("charater-sivu avattu")
 
-function showtab(tabId){
-    document.querySelectorAll('.tab-content')
-    .forEach(tab => {
-        tab.computedStyleMap.display = 'none';
+function showtab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.style.display = 'none';
     });
 
     document.getElementById(tabId).style.display = 'block';
